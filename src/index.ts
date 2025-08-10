@@ -1,6 +1,6 @@
 import { registerPlugin } from '@capacitor/core';
 
-export interface SaveAsPlugin {
+export interface SaveAs {
   showSaveAsPicker(options: {
     filename: string;
     mimeType: string;
@@ -8,4 +8,4 @@ export interface SaveAsPlugin {
   }): Promise<{ uri: string }>;
 }
 
-export const SaveAsPlugin = registerPlugin<SaveAsPlugin>('SaveAsPlugin');
+export const SaveAs = registerPlugin<SaveAs>('SaveAs');

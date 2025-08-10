@@ -1,8 +1,8 @@
 import Foundation
 import Capacitor
 
-@objc(SaveAsPlugin)
-public class SaveAsPlugin: CAPPlugin {
+@objc(SaveAs)
+public class SaveAs: CAPPlugin {
     @objc func showSaveAsPicker(_ call: CAPPluginCall) {
         guard let filename = call.getString("filename"),
               let mimeType = call.getString("mimeType"),
@@ -40,7 +40,7 @@ public class SaveAsPlugin: CAPPlugin {
 }
 
 // MARK: - UIDocumentPickerDelegate
-extension SaveAsPlugin: UIDocumentPickerDelegate {
+extension SaveAs: UIDocumentPickerDelegate {
     public func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
         // Success: file exported
         currentCall?.resolve(["uri": urls.first?.absoluteString ?? ""])
