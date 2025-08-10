@@ -1,6 +1,6 @@
 {
-  "name": "CapacitorSaveAs",
-  "id": "capacitor-save-as",
+  "name": "SaveAs",
+  "id": "SaveAs",
   "description": "A Capacitor plugin for Android and iOS that provides a native 'Save As' picker using Storage Access Framework (SAF) and UIDocumentPickerViewController.",
   "package": "com.adsurkasur.saveas",
   "platforms": ["android", "ios"],
