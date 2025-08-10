@@ -1,7 +1,7 @@
 # capacitor-save-as
 
 **Plugin ID:** `capacitor-save-as`
-**Main Class:** `CapacitorSaveAs`
+**Main Class:** `SaveAs`
 
 A modular Capacitor plugin for Android and iOS that provides a native "Save As" picker using Storage Access Framework (SAF) and UIDocumentPickerViewController.
 
@@ -17,11 +17,11 @@ npx cap sync
 ## Usage
 
 ```ts
-import { CapacitorSaveAs } from 'capacitor-save-as';
+import { SaveAs } from 'capacitor-save-as';
 
 const saveData = async (json: object) => {
   const data = btoa(JSON.stringify(json)); // base64 encode
-  await CapacitorSaveAs.showSaveAsPicker({
+  await SaveAs.showSaveAsPicker({
     filename: 'habits.json',
     mimeType: 'application/json',
     data,
@@ -51,5 +51,5 @@ This plugin now supports iOS! On iOS, it presents the native "Save to device" pi
 
 **Note:**
 
-- The API and usage are identical to Android. Just call `SaveAsPlugin.showSaveAsPicker(...)`.
+- The API and usage are identical to Android. Just call `SaveAs.showSaveAsPicker(...)`.
 - Returns `{ uri: string }` on success, or rejects if cancelled or failed.
