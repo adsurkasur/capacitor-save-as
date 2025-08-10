@@ -1,0 +1,19 @@
+{
+  "name": "CapacitorSaveAs",
+  "id": "capacitor-save-as",
+  "version": "1.0.0",
+  "description": "A Capacitor plugin for Android and iOS that provides a native 'Save As' picker using Storage Access Framework (SAF) and UIDocumentPickerViewController.",
+  "package": "com.adsurkasur.saveas",
+  "platforms": ["android", "ios"],
+  "author": "adsurkasur",
+  "license": "MIT",
+  "keywords": ["capacitor", "plugin", "save as", "android", "ios", "SAF", "UIDocumentPickerViewController"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adsurkasur/capacitor-save-as.git"
+  },
+  "homepage": "https://github.com/adsurkasur/capacitor-save-as",
+  "bugs": {
+    "url": "https://github.com/adsurkasur/capacitor-save-as/issues"
+  }
+}
