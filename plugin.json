@@ -15,4 +15,10 @@
   "bugs": {
     "url": "https://github.com/adsurkasur/capacitor-save-as/issues"
   }
+  ,
+  "android": {
+    "src": "src/main/java/com/adsurkasur/saveas/SaveAs.java",
+    "package": "com.adsurkasur.saveas",
+    "class": "SaveAs"
+  }
 }
