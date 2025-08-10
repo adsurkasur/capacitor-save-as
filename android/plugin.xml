@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="capacitor-save-as"
+    version="0.1.4">
+    <name>SaveAs</name>
+    <platform name="android">
+        <source-file src="src/main/java/com/adsurkasur/saveas/SaveAs.java"
+            target-dir="src/com/adsurkasur/saveas" />
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="SaveAs">
+                <param name="android-package" value="com.adsurkasur.saveas.SaveAs" />
+            </feature>
+        </config-file>
+    </platform>
+</plugin>
