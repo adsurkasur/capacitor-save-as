@@ -39,7 +39,7 @@ const saveData = async (json: object) => {
 
 Returns: `{ uri: string }` on success
 
-## iOS Support
+## iOS Support (Untested)
 
 This plugin now supports iOS! On iOS, it presents the native "Save to device" picker using UIDocumentPickerViewController, allowing users to choose location and filename in the Files app or iCloud.
 
