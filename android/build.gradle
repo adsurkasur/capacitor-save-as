@@ -12,10 +12,10 @@ apply plugin: 'com.android.library'
 
 android {
     namespace "com.adsurkasur.saveas"
-    compileSdkVersion 34
+    compileSdkVersion 35
     defaultConfig {
         minSdkVersion 23
-        targetSdkVersion 34
+        targetSdkVersion 35
         versionCode 1
         versionName "0.1.5"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
