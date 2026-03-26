@@ -25,7 +25,13 @@
   ],
   "scripts": {
     "build": "tsc",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "bump": "node scripts/bump-version.js",
+    "bump:patch": "npm run bump patch",
+    "bump:minor": "npm run bump minor",
+    "bump:major": "npm run bump major",
+    "release": "node scripts/release.js",
+    "publish": "node scripts/publish.js"
   },
   "capacitor": {
     "platforms": [
