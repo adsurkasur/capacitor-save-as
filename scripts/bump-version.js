@@ -5,12 +5,28 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 // Get the version bump type from CLI argument
-const bumpType = process.argv[2] || 'patch'; // patch, minor, major
+let bumpType = process.argv[2] || 'patch'; // patch, minor, major
 
-if (!['patch', 'minor', 'major'].includes(bumpType)) {
-  console.error('❌ Error: Invalid bump type. Use: patch, minor, or major');
+// Map short aliases to full names
+const aliasMap = {
+  'p': 'patch',
+  'patch': 'patch',
+  'm': 'minor',
+  'minor': 'minor',
+  'M': 'major',
+  'major': 'major'
+};
+
+if (!aliasMap[bumpType]) {
+  console.error('❌ Error: Invalid bump type.');
+  console.error('\nUsage:');
+  console.error('  npm run bump patch   (or p)');
+  console.error('  npm run bump minor   (or m)');
+  console.error('  npm run bump major   (or M)\n');
   process.exit(1);
 }
+
+bumpType = aliasMap[bumpType];
 
 try {
   console.log(`\n📦 Bumping version (${bumpType})...\n`);
